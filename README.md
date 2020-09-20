@@ -1,2 +1,1 @@
-# LiveProjectSummary-ASP.NET
-Summary of what I learned during my C#/ASP.NET MVC live project
+![LiveProject Logo](http://www.austinkrzciok.com/img/lp_logo.jpg)
