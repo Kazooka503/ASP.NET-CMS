@@ -103,3 +103,9 @@ to remove both.
 
 ```
 
+## Problem Creating Production Photos:
+
+Uploading new photos for productions was also throwing an error. I was tasked to find a solution to this problem as well.
+The first piece of thie puzzle was a ViewData issue. Attempting to upload a photo always produced a "There is no ViewData of type
+```'IEnumerable<SelectListItem>' that has the key "x"```
+
