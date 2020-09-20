@@ -71,7 +71,7 @@ Once done the page worked perfectly!
 The theater's productions have associated images for displaying a production's artwork and live shot photos.<br>
 When a user attempted to delete the primary photo associated with a production ASP.NET produced an error.
 I fixed this error by creating a variable that included the photo and its dependancy. I then used that variable 
-to remove both the photo and its dependancy. 
+to remove both. 
 
 ### Before:
 
