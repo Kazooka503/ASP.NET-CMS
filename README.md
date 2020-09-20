@@ -10,6 +10,52 @@ Here you will find development stories related to my project with supporting cod
 
 ## Styling Fixes:
 
-Content on one of the pages that displayed details for theater's production details was not centering properly on smaller screens.
+Content on one of the pages that displayed details for the theater's production details was not centering properly on smaller screens.
 
 ![Bugged Styling](http://www.austinkrzciok.com/img/center.png)
+
+In addition to this bug, there was a problem with one of the sections of the details page being attached to the section above it.
+
+I solved the first problem by removing unneeded margin tags that were pushing the div too far to the left on smaller screens.
+Fixing the second problem required setting display to None on the div card containing the section, that way when being viewed on smaller screen
+sizes the section would not display.
+
+### Before:
+
+```        <!--Iterate through Parts for a specific Type of role and if there is data it will display the below item in the Parts card. If no data is returned it
+            will not display-->
+		        <!--===================================================
+		              The below refactors the parts section
+		        ===================================================-->
+		        <!-- Parts Card Section visible when screen size is bigger-->
+		        <!-- when screen size is med or bigger this will display. It is otherwise hidden-->
+		        <!-- Parts Card Section -->
+			        <div class="card mr-6 d-md-block" id="cardss">
+	          <div class="card-header" id="head">
+	            <b>Parts</b>
+	          </div>
+
+	        <!-- End Parts Card Section-->
+	      </div>
+
+```
+
+### After:
+
+```        <!--Iterate through Parts for a specific Type of role and if there is data it will display the below item in the Parts card. If no data is returned it
+            will not display-->
+		        <!--===================================================
+		              The below refactors the parts section
+		        ===================================================-->
+		        <!-- Parts Card Section visible when screen size is bigger-->
+		        <!-- when screen size is med or bigger this will display. It is otherwise hidden-->
+		        <!-- Parts Card Section -->
+			        <div class="card text-center bg-white text-black-50" id="cardss">
+	          <div class="card-header" id="head">
+	            <b>Parts</b>
+	          </div>
+
+	        <!-- End Parts Card Section-->
+	      </div>
+```
+
