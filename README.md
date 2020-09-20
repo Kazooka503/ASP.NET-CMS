@@ -190,7 +190,7 @@ Problem solved.
 * Exerience in communicating ideas and concepts to others, including fellow peers and project leads.
 * Experience in sourcing data and information to overcome unexpected problems. 
 * Experience debugging code other people have written
-* Experience metting code standards
+* Experience meeting code standards
 
 *Back to: [top](#introduction), [styling fixes](#styling-fixes), [deleting photos](#problem-deleting-production-photos), [creating photos](#problem-creating-production-photos)*
 
