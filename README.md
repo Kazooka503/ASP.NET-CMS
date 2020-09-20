@@ -107,5 +107,55 @@ to remove both.
 
 Uploading new photos for productions was also throwing an error. I was tasked to find a solution to this problem as well.
 The first piece of thie puzzle was a ViewData issue. Attempting to upload a photo always produced a "There is no ViewData of type
-```'IEnumerable<SelectListItem>' that has the key "x"```
+```'IEnumerable<SelectListItem>' that has the key "x"```. I fixed this by including the ViewData in the POST method, where before it was only being incuded in the GET method. 
+
+### Before:
+
+```
+	
+	if (ModelState.IsValid)
+            {
+                Production production = db.Productions.Find(productionID);
+                productionPhotos.Production = production;
+
+                if (production.DefaultPhoto == null)
+                {
+                    production.DefaultPhoto = productionPhotos;
+                }
+
+                db.ProductionPhotos.Add(productionPhotos);
+                db.SaveChanges();      
+
+                return RedirectToAction("Index");
+            }
+            
+            return View(productionPhotos);
+        }
+	
+```
+
+### After:
+
+```
+	if (ModelState.IsValid)
+            {
+                Production production = db.Productions.Find(productionID);
+                productionPhotos.Production = production;
+
+                if (production.DefaultPhoto == null)
+                {
+                    production.DefaultPhoto = productionPhotos;
+                }
+
+                db.ProductionPhotos.Add(productionPhotos);
+                db.SaveChanges();      
+
+                return RedirectToAction("Index");
+            }
+            ViewData["Productions"] = new SelectList(db.Productions.ToList(), "ProductionId", "Title");
+
+            return View(productionPhotos);
+        }
+```
+
 
