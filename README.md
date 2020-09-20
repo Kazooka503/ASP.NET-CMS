@@ -61,7 +61,7 @@ sizes the section would not display.
 	      </div>
 ```
 
-Detatching the sections was a simple correction of correcting the nested ```</div>``` tags. 
+Detatching the sections was a simple correction of correcting the nested ```</div>``` tags.<br> 
 Once done the page worked perfectly!
 
 ![Corrected Styling](http://www.austinkrzciok.com/img/parts.png)
