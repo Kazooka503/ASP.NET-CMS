@@ -66,3 +66,40 @@ Once done the page worked perfectly!
 
 ![Corrected Styling](http://www.austinkrzciok.com/img/parts.png)
 
+## Problem Deleting Production Photos:
+
+The theater's productions have associated images for displaying a production's artwork and live shot photos.<br>
+When a user attempted to delete the primary photo associated with a production ASP.NET produced an error.
+I fixed this error by creating a variable that included the photo and its dependancy. I then used that variable 
+to remove both the photo and its dependancy. 
+
+### Before:
+
+```
+
+	public ActionResult DeleteConfirmed(int id)
+		        {
+		            ProductionPhotos productionPhotos = db.ProductionPhotos.Find(id);
+			    db.ProductionPhotos.Remove(productionPhotos);
+		            db.SaveChanges();
+		            return RedirectToAction("Index");
+		        }
+
+```
+
+### After:
+
+```
+
+	public ActionResult DeleteConfirmed(int id)
+		        {
+		            // Removes Photo and dependencies on delete
+		            var photoDependency = db.ProductionPhotos.Include(b => b.Production)
+		                                         .FirstOrDefault(b => b.ProPhotoId == id);
+			    db.ProductionPhotos.Remove(photoDependency);
+		            db.SaveChanges();
+		            return RedirectToAction("Index");
+		        }
+
+```
+
