@@ -8,6 +8,12 @@ Working with ASP.NET on a major project for the first time was an excellent lear
 
 Here you will find development stories related to my project with supporting code snippets.
 
+# Project Stories:
+* [Styling Fixes](#styling-fixes)
+* [Deleting Photos](#problem-deleting-production-photos)
+* [Creating Photos](#problem-creating-prodution-photos)
+* [Other Skills Acquired](#other-skills-acquired)
+
 ## Styling Fixes:
 
 Content on one of the pages that displayed details for the theater's production details was not centering properly on smaller screens.
@@ -158,5 +164,15 @@ I fixed this by including the ViewData in the POST method, where before it was o
             return View(productionPhotos);
         }
 ```
+
+## Other Skills Acquired
+
+* Direct experience in AGILE/SCRUM 
+* Experience using Azure DevOps
+* A deepend understanding of SQL and databases
+* Exerience in communicating ideas and concepts to others, including fellow peers and project leads.
+* Experience in sourcing data and information to overcome unexpected problems. 
+* Experience debugging code other people have written
+* Experience metting code standards
 
 
