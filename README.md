@@ -165,8 +165,8 @@ I fixed this by including the ViewData in the POST method, where before it was o
         }
 ```
 
-The second problem arrived occured immediately after solving the first. 
-When a user attempted to upload a photo they were met with,<br>
+The second problem occured immediately after solving the first. 
+When a user attempted to upload a photo they were now met with,<br>
 "``` The parameter conversion from type 'System.String' to type ''X' failed because no type converter can convert between these types```".<br><br>
 
 This turned out to a pretty simple fix. The issued lied with the binding for the Create method.<br>
@@ -178,7 +178,7 @@ To:<br>
 
 ```public ActionResult Create([Bind(Include = "Title,Description")] ProductionPhotos productionPhotos, HttpPostedFileBase file)``` <br>
 
-Problem Fixed. 
+Problem solved. 
 
 
 ## Other Skills Acquired
