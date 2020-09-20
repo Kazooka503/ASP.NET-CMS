@@ -52,7 +52,7 @@ sizes the section would not display.
 		        <!-- Parts Card Section visible when screen size is bigger-->
 		        <!-- when screen size is med or bigger this will display. It is otherwise hidden-->
 		        <!-- Parts Card Section -->
-			        <div class="card text-center bg-white text-black-50" id="cardss">
+			        <div class="card d-none d-md-block" id="cardss">
 	          <div class="card-header" id="head">
 	            <b>Parts</b>
 	          </div>
