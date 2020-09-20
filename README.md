@@ -11,7 +11,7 @@ Here you will find development stories related to my project with supporting cod
 # Project Stories:
 * [Styling Fixes](#styling-fixes)
 * [Deleting Photos](#problem-deleting-production-photos)
-* [Creating Photos](#problem-creating-prodution-photos)
+* [Creating Photos](#problem-creating-production-photos)
 * [Other Skills Acquired](#other-skills-acquired)
 
 ## Styling Fixes:
