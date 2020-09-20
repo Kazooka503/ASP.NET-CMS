@@ -170,11 +170,12 @@ When a user attempted to upload a photo they were met with,<br>
 "``` The parameter conversion from type 'System.String' to type ''X' failed because no type converter can convert between these types```".<br><br>
 
 This turned out to a pretty simple fix. The issued lied with the binding for the Create method.<br>
-Changing <br>
+Changed <br>
 ```public ActionResult Create([Bind(Include = "Title,Description,Production")] ProductionPhotos productionPhotos, HttpPostedFileBase file)```<br>
-to:<br>
+To:<br>
 ```public ActionResult Create([Bind(Include = "Title,Description")] ProductionPhotos productionPhotos, HttpPostedFileBase file)``` <br>
-fixed the problem. 
+
+Problem Fixed. 
 
 
 ## Other Skills Acquired
