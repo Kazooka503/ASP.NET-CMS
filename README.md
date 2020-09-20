@@ -22,7 +22,8 @@ sizes the section would not display.
 
 ### Before:
 
-```        <!--Iterate through Parts for a specific Type of role and if there is data it will display the below item in the Parts card. If no data is returned it
+```        
+	<!--Iterate through Parts for a specific Type of role and if there is data it will display the below item in the Parts card. If no data is returned it
             will not display-->
 		        <!--===================================================
 		              The below refactors the parts section
@@ -42,7 +43,8 @@ sizes the section would not display.
 
 ### After:
 
-```        <!--Iterate through Parts for a specific Type of role and if there is data it will display the below item in the Parts card. If no data is returned it
+```        
+	   <!--Iterate through Parts for a specific Type of role and if there is data it will display the below item in the Parts card. If no data is returned it
             will not display-->
 		        <!--===================================================
 		              The below refactors the parts section
