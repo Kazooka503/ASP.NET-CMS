@@ -8,3 +8,8 @@ Working with ASP.NET on a major project for the first time was an excellent lear
 
 Here you will find development stories related to my project with supporting code snippets.
 
+## Styling Fixes:
+
+Content on one of the pages that displayed details for theater's production details was not centering properly on smaller screens.
+
+![Bugged Styling](http://www.austinkrzciok.com/img/center.png)
