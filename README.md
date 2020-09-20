@@ -173,6 +173,7 @@ This turned out to a pretty simple fix. The issued lied with the binding for the
 Changed <br>
 
 ```public ActionResult Create([Bind(Include = "Title,Description,Production")] ProductionPhotos productionPhotos, HttpPostedFileBase file)```<br>
+
 To:<br>
 
 ```public ActionResult Create([Bind(Include = "Title,Description")] ProductionPhotos productionPhotos, HttpPostedFileBase file)``` <br>
