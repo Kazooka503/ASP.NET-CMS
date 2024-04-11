@@ -16,8 +16,6 @@ Here you will find development stories related to my project with supporting cod
 
 Content on one of the pages that displayed details for the theater's production details was not centering properly on smaller screens.
 
-![Bugged Styling](http://www.austinkrzciok.com/img/center.png)
-
 In addition to this bug, there was a problem with one of the sections of the details page being attached to the section above it.
 
 I solved the first problem by removing unneeded margin tags that were pushing the div too far to the left on smaller screens.
